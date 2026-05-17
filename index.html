@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Treasure Tambwanaye - WDD231 Web Frontend Development">
+    <meta name="author" content="Treasure Tambwanaye">
+    <title>Treasure Tambwanaye | WDD231</title>
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/treasure-favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="header__profile">
+            <img src="images/TreasureProfileCrop.jpg" 
+                 alt="Treasure Tambwanaye profile picture" 
+                 class="header__profile-picture">
+            
+            <div class="header__profile-content">
+                <h1>Treasure Tambwanaye</h1>
+                <button class="menu-toggle" id="header-theme-toggle" aria-label="Toggle theme">☀️</button>
+            </div>
+        </div>
+
+        <nav class="header__menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+        <button class="header__bars" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__menu">
+            <li><a href="index.html" class="mobile-nav__link active">Home</a></li>
+            <li><a href="chamber/index.html" class="mobile-nav__link">Chamber</a></li>
+            <li><a href="#" class="mobile-nav__link">Final Project</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>Learning Activities</h2>
+            <ul id="learning-activities" class="section2-ul">
+    
+</ul>
+        </section>
+
+        <section>
+            <h2>Web & Computer Programming Certificate</h2>
+            
+            <div class="filter-buttons">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="WDD">WDD</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="ITM">ITM</button>
+            </div>
+
+            <div id="courses-container" class="courses-grid"></div>
+            
+            <p><strong>Total Credits: <span id="total-credits">0</span></strong></p>
+        </section>
+
+        <section>
+            <h2>Johannesburg Weather</h2>
+            <div id="weather">Loading weather...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Treasure Tambwanaye | South Africa
+        </p>
+        <p class="lastModified">Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</body>
+</html>

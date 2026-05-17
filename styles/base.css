@@ -1,0 +1,326 @@
+:root {
+  --clr-primary: #263363;
+  --clr-accent: #ff6f26;
+  --clr-light: #f5f5f4;     /* Light background */
+  --clr-dark: #00071d;      /* Dark text */
+  --clr-gray: #a8a29e;
+
+  /* Dark Mode Colors */
+  --clr-dark-bg: #0a0f1c;
+  --clr-dark-card: #1f2a44;
+  --clr-dark-text: #e0e0e0;
+
+  /* Sizes */
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+}
+
+/* BODY & DARK MODE */
+body {
+  font-family: "Nunito Sans", system-ui, sans-serif;
+  background-color: var(--clr-light);
+  color: var(--clr-light);
+  line-height: 1.6;
+  padding-inline: 1rem;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/* Dark Mode */
+.light-mode {
+  --clr-light: var(--clr-dark-bg);
+  --clr-dark: var(--clr-dark-text);
+}
+
+.light-mode body {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+/* Header */
+.light-mode .header__profile {
+  border-bottom-color: var(--clr-accent);
+}
+
+/* Course Cards - Dark Mode */
+.light-mode .course-card {
+  background: #1f2a44;
+  border-color: #556688;
+  color: #e0e0e0;
+}
+
+.light-mode .course-card h3 {
+  color: #a5d6ff;
+}
+
+.light-mode .course-card p {
+  color: #c0c8d8;
+}
+
+/* Hamburger Icon */
+.light-mode .header__bars {
+  color: var(--clr-accent);
+}
+
+/* Mobile Nav Links */
+.light-mode .mobile-nav__link {
+  color: #c0c8d8;
+}
+
+/* Filter Buttons in Dark Mode */
+.light-mode .filter-buttons button {
+  background: #1f2a44;
+  color: #e0e0e0;
+  border-color: #556688;
+}
+
+.light-mode .filter-buttons button.active,
+.light-mode .filter-buttons button:hover {
+  background: var(--clr-accent);
+  color: #000;
+}
+
+/* Weather Section */
+.light-mode #weather {
+  background: #1f2a44;
+  color: #e0e0e0;
+}
+
+/* Header */
+.header__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid var(--clr-accent);
+}
+
+.header__profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--clr-accent);
+}
+
+.header__profile-content {
+  flex: 1;
+}
+
+.header__profile-content h1 {
+  font-size: var(--size-3xl);
+  color: var(--clr-primary);
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__bars {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-primary);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 170px;
+  left: 60px;
+  width: 50%;
+  height: 50vh;
+  background-color: var(--clr-light);
+  border: solid 2px var(--clr-accent);
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mobile-nav__menu {
+  list-style: none;
+}
+
+.mobile-nav__link {
+  font-size: var(--size-xl);
+  color: var(--clr-primary);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: block;
+}
+
+.mobile-nav__link.active,
+.header__menu a.active {
+  color: var(--clr-accent);
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 100%;
+    padding-inline: 1rem;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: var(--size-4xl);
+  margin-bottom: 2rem;
+  color: var(--clr-primary);
+}
+
+h2 {
+  color: var(--clr-primary);
+  margin: 2.5rem 0 1rem;
+  border-bottom: 2px solid var(--clr-accent);
+  padding-bottom: 0.5rem;
+}
+
+.menu-toggle {
+  border: none;
+  background: transparent;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--clr-accent);
+  background: white;
+  color: var(--clr-primary);
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: var(--clr-accent);
+  color: white;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-card {
+  border: 2px solid var(--clr-gray);
+  border-radius: 12px;
+  padding: 1rem;
+  background: white;
+  transition: transform 0.3s;
+  color: var(--clr-dark);
+}
+
+.light-mode .course-card {
+  background: var(--clr-dark-card);
+  border-color: #556688;
+  color: var(--clr-dark-text);
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.completed {
+  border-color: var(--clr-accent);
+  background: #fff9f0;
+}
+
+.course-card h3 {
+  color: var(--clr-primary);
+}
+
+.course-card p {
+  font-size: var(--size-sm);
+  margin: 0.5rem 0;
+}
+
+/* Weather */
+#weather {
+  padding: 1.5rem;
+  background: #f0f4f8;
+  border-radius: 12px;
+  text-align: center;
+  font-size: var(--size-lg);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid var(--clr-accent);
+  margin-top: 3rem;
+  color: var(--clr-primary);
+}
+
+.lastModified {
+  font-size: var(--size-sm);
+  color: var(--clr-gray);
+}
+
+/* Utility */
+.active {
+  color: var(--clr-accent);
+}
+
+.light-mode .course-card,
+.light-mode main,
+.light-mode section,
+.light-mode footer {
+  background-color: transparent;
+}
+
+/* Final Polish */
+main section {
+  margin-bottom: 3rem;
+}
+
+.section2-ul {
+  list-style: none;
+}
+
+.section2-ul li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--clr-gray);
+}
+
+.light-mode .section2-ul li {
+  border-bottom-color: #445577;
+}
+
+/* Improve readability */
+p, li {
+  font-size: 1.05rem;
+}
+
+/* Make sure cards look good in both modes */
+.course-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.light-mode .course-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
