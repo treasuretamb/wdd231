@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Sandton Capital Partners",
+      "address": "14 Rivonia Road, Sandton, Johannesburg, 2196",
+      "phone": "+27 11 784 2200",
+      "website": "https://www.sandtoncapital.co.za",
+      "image": "sandton-capital.webp",
+      "membershipLevel": 3,
+      "description": "Premier investment and financial advisory firm serving Johannesburg's business community since 1998."
+    },
+    {
+      "name": "Mzansi Tech Hub",
+      "address": "72 Fox Street, Maboneng, Johannesburg, 2094",
+      "phone": "+27 11 033 5800",
+      "website": "https://www.mzansitechhub.co.za",
+      "image": "mzansi-tech.webp",
+      "membershipLevel": 3,
+      "description": "Joburg's leading technology incubator and co-working space fostering African innovation."
+    },
+    {
+      "name": "Ubuntu Hospitality Group",
+      "address": "55 Nelson Mandela Square, Sandton, Johannesburg, 2196",
+      "phone": "+27 11 883 4100",
+      "website": "https://www.ubuntuhospitality.co.za",
+      "image": "ubuntu-hospitality.webp",
+      "membershipLevel": 3,
+      "description": "Award-winning hotel and restaurant group celebrating authentic South African cuisine and culture."
+    },
+    {
+      "name": "Joburg Green Energy Solutions",
+      "address": "8 Grayston Drive, Strathavon, Johannesburg, 2031",
+      "phone": "+27 11 656 7890",
+      "website": "https://www.joburggreenenergy.co.za",
+      "image": "joburg-green.webp",
+      "membershipLevel": 2,
+      "description": "Renewable energy consultants and solar installation specialists powering Johannesburg's future."
+    },
+    {
+      "name": "Soweto Creative Agency",
+      "address": "Orlando West, Soweto, Johannesburg, 1804",
+      "phone": "+27 11 938 2244",
+      "website": "https://www.sowetocreative.co.za",
+      "image": "soweto-creative.webp",
+      "membershipLevel": 2,
+      "description": "Bold branding and digital marketing agency rooted in Soweto's vibrant creative culture."
+    },
+    {
+      "name": "Rosebank Legal Associates",
+      "address": "191 Jan Smuts Avenue, Rosebank, Johannesburg, 2196",
+      "phone": "+27 11 442 3300",
+      "website": "https://www.rosebanklegals.co.za",
+      "image": "rosebank-legal.webp",
+      "membershipLevel": 2,
+      "description": "Full-service commercial law firm specialising in corporate law, property, and BEE compliance."
+    },
+    {
+      "name": "Jozi Fresh Market Co.",
+      "address": "Neighbourgoods Market, Braamfontein, Johannesburg, 2001",
+      "phone": "+27 11 339 0088",
+      "website": "https://www.jozifresh.co.za",
+      "image": "jozi-fresh.webp",
+      "membershipLevel": 1,
+      "description": "Locally sourced organic produce and artisan goods connecting Joburg farmers with city consumers."
+    }
+  ]
+}
